@@ -1,0 +1,202 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: #ff5b5b;
+	margin: 25px 0;
+}
+
+#app {
+	width: 1200px;
+	margin: 0 auto;
+	height: 100em;
+	background-color: #fff;
+	text-align: center;
+}
+
+h1 {
+	padding-top: 50px;
+}
+
+.input-item {
+	display: inline-block;
+	margin-top: 20px;	
+}
+
+.input-item .title-search {
+	font-size: 30px
+}
+
+.input-item input {
+	margin-top: 10px;
+	padding-left: 15px;
+	display: block;
+	width: 300px;
+	height: 50px;
+	border: 1px solid  #ff5b5b;
+	border-radius: 8px;
+	outline: none;
+	color: black;
+	font-size: 22px
+}
+
+.disabled {
+	/*pointer-events:none;*/
+}
+
+.wrapper {
+	padding-top: 50px;
+	padding-left: 25px;
+	padding-right: 25px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.wrapper.wrapper-category {
+	justify-content: center	;
+}
+
+.wrapper.crud {
+	display: flex;
+	justify-content: center;
+	flex-direction: column
+}
+
+.wrapper.crud .title {
+	text-align: center;
+}
+
+.wrapper.wrapper-brands .brands .title {
+	text-align: center
+}
+
+.wrapper.wrapper-brands .brands {
+	width: 100%;
+}
+
+.wrapper.wrapper-brands .brands .results {
+	margin-top: 40px;
+	display: flex;
+	justify-content: space-around;	
+	flex-wrap: wrap
+}
+
+.item-block {
+	position: relative;
+}
+
+.erro-input-value {
+	font-size: 30px;
+	color: darkgreen;
+	font-weight: 900
+}
+
+.delete {
+	width: 35px;
+	height: 35px;
+	background-image: url(../img/delete.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	display: inline-block;
+	position: absolute;
+	top: -5px;
+	right: -50px;
+}
+
+.add-block {
+	margin: 25px 0;
+}
+
+.add-block p {
+	font-size: 24px;
+	margin-bottom: 20px;
+	font-weight: 700
+}
+
+.add-block label {
+	font-size: 20px;
+	margin-right: 25px;
+	margin-left: 25px;
+}
+
+.add-block input {
+	height: 40px;
+	padding-left: 15px;
+	color: #ff5b5b;
+	font-size: 18px;
+	font-weight: 700
+}
+
+.add-block .submit {
+	border: none;
+	height: 45px;
+	/*width: 100px;*/
+	padding: 5px 25px;
+	margin-left: 25px;
+}
+
+.title {
+	font-size: 30px;
+	font-weight: 900;
+	text-align: left;
+}
+
+.results {
+	margin-top: 15px;
+	text-align: left
+}
+
+.results .item {
+	margin-bottom: 10px;
+	font-size: 20px
+}
+
+.results .title-description {
+	font-weight: 700
+}
+
+.results .title-price {
+	color: blue;
+	font-size: 20px;
+	font-weight: 700
+}
+
+.results .title-brands {
+	color: #ff0000;
+	font-size: 22px;
+	font-weight: 700
+}
+
+.results .title-category {
+	color: #127900;
+	font-size: 22px;
+	font-weight: 700
+}
+
+.link a {
+	text-decoration: none;
+	font-size: 20px;
+	position: relative;
+}
+
+.link a:after {
+	content: '';
+	position: absolute;
+	bottom: -5px;
+	left: 0;
+	right: 0;
+	margin: 0 auto; 
+	display: block;
+	width: 0;
+	height: 2px;
+	background-color: #ff5b5b;
+	transition: width .3s linear
+}
+
+.link a:hover:after {
+	width: 100%;	
+	transition: width .3s linear
+}
