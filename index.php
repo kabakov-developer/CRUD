@@ -9,12 +9,17 @@
 	<title>SQL-test</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
+
 <body>
 	<div id="app">
 		<h1>CRUD</h1>
 		<div class="input-item">
-			<label for="search" class="title-search" title="В скором времени будет дотупен поиск =)">Поиск по товарам:</label>
-			<input type="search" name="search" id="search" class="disabled" disabled="disabled">
+			<form action="ajax/gethint.php">
+				<label for="search" class="title-search">Поиск по товарам:</label>
+				<input type="text" onkeyup="showHint(this.value)" name="search" id="search">
+			</form>
+			<p>Наименование продукта: <span id="txtHint"></span></p>
+
 		</div>
 		<div class="wrapper">
 			<div class="products">
@@ -91,6 +96,23 @@
 				</div>
 			</div>
 		</div>
+			<form>
+				<select name="users" onchange="showBrands(this.value)">
+					<option value="">Выберите бренд:</option>
+					<option value="1">Apple</option>
+					<option value="2">Huawei</option>
+					<option value="3">Meizu</option>
+					<option value="4">Samsung</option>
+					<option value="5">Xiaomi</option>
+					<option value="6">LG</option>				  
+				</select>
+			</form>
+			<br>
+			<div id="resultShow"><b>Здесь отобразится список с брендами...</b></div>
 	</div>
+<script src="jquery.js"></script>
+<script src="ajax/showBrands.js"></script>
+<script src="ajax/showHint.js"></script>	
+<script src="js/main.js"></script>
 </body>
 </html>
