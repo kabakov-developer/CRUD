@@ -15,7 +15,7 @@
 				</div>
 				<div class="results">
 					<?php
-						$sql = "SELECT id, name, id_brands FROM Brands";
+						$sql = "SELECT id, name, status FROM Brands";
 						$result = $conn->query($sql);
 
 						if ($result->num_rows > 0) {
@@ -25,6 +25,8 @@
 									<div class='item title-brands'><?= $row["name"] ?></div>
 									<a class='delete' href='delete.php?del=<?= $row["id"]?>'></a>
 									<a href='edit.php?edit=<?= $row['id'] ?>'>EDIT</a>
+									<a href='#' class="enable" data-id='<?= $row['id'] ?>'>В наличии</a>
+									<a href='#' class="disable" data-id='<?= $row['id'] ?>'>Отсутствует</a>
 								</div>
 						    <?php }
 						} else {
@@ -49,8 +51,10 @@
 			<a href="../index.php">Вернуться к главной странице</a>
 		</div>
 	</div>
-	
+	</div>
+	</div>
 
+<script src="../jquery.js"></script>
 <script src="../js/main.js"></script>
 </body>
 </html>

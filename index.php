@@ -16,7 +16,7 @@
 		<div class="input-item">
 			<form action="ajax/gethint.php">
 				<label for="search" class="title-search">Поиск по товарам:</label>
-				<input type="text" onkeyup="showHint(this.value)" name="search" id="search">
+				<input type="text" onkeyup="showHint(this.value)" name="search" id="search" disabled="disabled">
 			</form>
 			<p>Наименование продукта: <span id="txtHint"></span></p>
 
@@ -96,7 +96,7 @@
 				</div>
 			</div>
 		</div>
-			<form>
+		<!-- 	<form>
 				<select name="users" onchange="showBrands(this.value)">
 					<option value="">Выберите бренд:</option>
 					<option value="1">Apple</option>
@@ -109,7 +109,7 @@
 			</form>
 			<br>
 			<div id="resultShow"><b>Здесь отобразится список с брендами...</b></div>
-	</div>
+	</div> -->
 <script src="jquery.js"></script>
 <script src="ajax/showBrands.js"></script>
 <script src="ajax/showHint.js"></script>	

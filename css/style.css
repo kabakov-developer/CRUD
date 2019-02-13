@@ -201,3 +201,16 @@ h1 {
 	width: 100%;	
 	transition: width .3s linear
 }
+
+.enable {
+	background-color: lightgreen;
+	position: relative;
+	display: block;
+	margin: 5px 0;
+}
+
+.disable {
+	background-color: red;
+	position: relative;
+	display: block;
+}

@@ -19,7 +19,7 @@
 							// isset()
 						if (!empty($_POST["name"])) {
 						    //Вставляем данные, подставляя их в запрос
-						    $sql = mysqli_query($conn, "INSERT INTO `Brands` (`name`, `id_brands`) VALUES ('{$_POST['name']}', '{$_POST['id_brands']}')");
+						    $sql = mysqli_query($conn, "INSERT INTO `Brands` (`name`) VALUES ('{$_POST['name']}')");
 						    //Если вставка прошла успешно
 						    if ($sql) {
 						      echo '<p>Данные успешно добавлены в таблицу.</p>';
