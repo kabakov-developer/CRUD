@@ -11,7 +11,7 @@
 		<div class="wrapper wrapper-brands">
 			<div class="brands">
 				<div class="title">
-					Брэнды
+					Бренды
 				</div>
 				<div class="results">
 					<?php
@@ -38,7 +38,7 @@
 				<div class="add-block">
 					<p>Добавить бренд</p>
 					<form action="add-brands.php" method="post">
-						<label for="name">Имя Брэнда:</label>
+						<label for="name">Имя Бренда:</label>
 						<input type="text" name="name" id="name">
 						<!-- <label for="id_brands">id_brands:</label>
 						<input type="text" name="id_brands" id="id_brands"> -->

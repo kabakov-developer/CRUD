@@ -11,7 +11,7 @@
 		<div class="wrapper wrapper-brands">
 			<div class="brands">
 				<div class="title">
-					Брэнды
+					Категории
 				</div>
 				<div class="results">
 					<?php

@@ -34,8 +34,8 @@ $('.item-block').on('click', '.enable', function() {
 	var id = $(this).attr("data-id");
 	var ac = $(this).text();
 	alert(id+' '+ac);
-	var url = '/brands/disable.php';
-	$.get('/brands/enable.php', function(data){
+	var url = '/brands/enable.php';
+	$.get(url+'?id='+id, function(data){
 	 	
 	});
 });

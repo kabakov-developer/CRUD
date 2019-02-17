@@ -1,9 +1,11 @@
 <?php include("bd.php") ?>
 <?php  
 
-$sql = "CREATE TABLE Category (
+$sql = "CREATE TABLE Users (
 	id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
-	name VARCHAR(255) NOT NULL
+	username VARCHAR(100) NOT NULL,
+	email VARCHAR(100) NOT NULL,
+	password VARCHAR(100) NOT NULL
 )";
 
 
