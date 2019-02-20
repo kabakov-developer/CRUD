@@ -150,6 +150,15 @@ h1 {
 	text-align: left
 }
 
+.status-enable {
+	background-color: #ebffeb;
+}
+
+.status-disable {
+	background-color: #ff6a6a;
+}
+
+
 .results .item {
 	margin-bottom: 10px;
 	font-size: 20px
@@ -203,14 +212,14 @@ h1 {
 }
 
 .enable {
-	background-color: lightgreen;
-	position: relative;
+/*	background-color: lightgreen;
+	position: relative;*/
 	display: block;
 	margin: 5px 0;
 }
 
 .disable {
-	background-color: red;
-	position: relative;
+/*	background-color: red;
+	position: relative;*/
 	display: block;
 }

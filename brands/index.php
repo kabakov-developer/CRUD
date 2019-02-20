@@ -21,7 +21,7 @@
 						if ($result->num_rows > 0) {
 						    // output data of each row
 						    while($row = $result->fetch_assoc()) { ?>
-						        <div class='item-block'>
+						        <div class='item-block' data-status='<?= $row['status'] ?>'>
 									<div class='item title-brands'><?= $row["name"] ?></div>
 									<a class='delete' href='delete.php?del=<?= $row["id"]?>'></a>
 									<a href='edit.php?edit=<?= $row['id'] ?>'>EDIT</a>
